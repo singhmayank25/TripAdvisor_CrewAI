@@ -7,6 +7,13 @@ Real-time web search and website scraping for up-to-date info
 Multi-agent collaboration: Local Guide, Travel Planner, Trip Expert
 AI-generated travel advice and itineraries
 
+# Tools Used:
+CrewAI Agents – Multi-agent AI orchestration
+LLMs – Ollama LLaMA or local LLMs for content generation
+Web Search Tools – DuckDuckGoSearchResults
+Vector Database – ChromaDB for storing and retrieving travel info
+LangSmith – Orchestration, monitoring, and logging
+
 # Setup Environment:       
       Install packages:
       pip install -r requirements.txt
