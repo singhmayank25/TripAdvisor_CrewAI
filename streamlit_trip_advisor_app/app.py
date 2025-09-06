@@ -2,6 +2,13 @@ from TravelAgents import guide_expert, location_expert, planner_expert
 from TravelTasks import location_task, guide_task, planner_task
 from crewai import Crew, Process
 import streamlit as st
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+os.environ["LANGCHAIN_TRACING_V2"]="true"
+os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGSMITH_API_KEY")
+os.environ["LANGCHAIN_PROJECT"]="AI Trip Advisor" 
 
 # Streamlit App Title
 st.title("🌍 AI-Powered Trip Planner")
